@@ -3,3 +3,9 @@ eg：he = "hello"
 shell会以为是he是一个系统命令，= "hello"是参数
 2.找某文件并删除
 find ./ -name test -exec  rm {} \;
+3.apt install
+  解决Could not get lock /var/lib/dpkg/lock - open (11: Resource temporarily unavailable)
+  lsof /var/lib/dpkg/lock 
+  kill 对应的pid
+  lsof(list open file)
+
