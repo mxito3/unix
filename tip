@@ -8,4 +8,6 @@ find ./ -name test -exec  rm {} \;
   lsof /var/lib/dpkg/lock 
   kill 对应的pid
   lsof(list open file)
-
+  4.
+  :set ff=unix
+  设置脚本文件格式
