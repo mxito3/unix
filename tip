@@ -14,3 +14,8 @@ find ./ -name test -exec  rm {} \;
 5.curl -sSL https://goo.gl/kFFqh5 | bash -s 1.0.6
         取来https://goo.gl/kFFqh5的输入作为bash的输入,需要注意的是curl -s使用silent模式，即不打印进度和错误信息，
         -S和-s一起使用用来在失败的时候输出一条错误信息,bash -s选项用来设置从标准输入读取命令并执行。
+6.命令行翻墙
+        第一步：利用ss允许局域网翻墙。（默认允许）
+        第二步：export http_proxy=http://ss_address
+               exprt https_proxy=http://ss_address
+        
